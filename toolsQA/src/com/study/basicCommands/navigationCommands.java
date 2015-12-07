@@ -23,24 +23,6 @@ public class navigationCommands {
 		/*4.Refresh Command*/
 		driver.navigate().refresh();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		driver.close();
 		System.out.println("done");
 		
