@@ -45,6 +45,9 @@ public class BrowserCommands {
 		/*5.Close Command - closes the browser window for current instance*/
 		driver.close();
 		
+		/*6.Quit command*/
+		driver.quit();
+		
 		
 		
 		
