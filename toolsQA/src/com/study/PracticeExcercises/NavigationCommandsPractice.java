@@ -26,16 +26,25 @@ public class NavigationCommandsPractice {
 		String url  ="http://www.DemoQA.com";
 		String ELRegistrationButton = ".//*[@id='menu-item-374']/a";
 		try {
+		driver.manage().window().maximize();
+		System.out.println("Window maximized");
 		driver.get(url);
+		System.out.println("Url opened");
 		driver.findElement(By.xpath(ELRegistrationButton)).click();
+		System.out.println("On registration page");
 		driver.navigate().back();
+		System.out.println("back on homepage");
 		driver.navigate().forward();
+		System.out.println("Forwarded on registrtaion page");
 		driver.navigate().to(url);
+		System.out.println("navigated to home Page");
 		driver.navigate().refresh();
+		System.out.println("Page is refreshed");
 		driver.close();
-		System.out.println("demo ok");
+		System.out.println("Browser closed");
+		System.out.println("Success");
 		}catch (Throwable t){
-			System.out.println("test failed");
+			System.out.println("Failure");
 		}
 		
 	}
