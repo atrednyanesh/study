@@ -1,4 +1,4 @@
-package com.study.browserCommands;
+package com.study.basicCommands;
 
 import java.util.concurrent.TimeUnit;
 
