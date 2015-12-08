@@ -37,56 +37,38 @@ public class checkboxesAndRadioButtons {
 			System.out.println("Female option is already selected");
 		}
 
-
 		/*2.*/
-
 		WebElement RadioButton3 = driver.findElement(By.id("exp-2")); 
 		RadioButton3.click();
-
 		if (RadioButton3.isSelected() == true){
 			System.out.println("3 years of Experiance is selected");
 		}else{
 			System.out.println("experiance dint get correctly selected");
 		}
-
-
+		
 		/*3.*/
 		List CheckBoxProfession = driver.findElements(By.name("profession"));
 		int iSize1 = CheckBoxProfession.size();
-
-
 		for (int i =0; i<=iSize1; i++){
-
 			String value = ((WebElement) CheckBoxProfession.get(i)).getAttribute("Value");
-
 			if (value.equalsIgnoreCase("Automation Tester")){
-
 				((WebElement) CheckBoxProfession.get(i)).click();
 				System.out.println("Automation tester is now selected");
-
 				// This will take the execution out of for loop
-
 				break;
-
 			}
-
-
 		}
-
 
 		/*4.*/
 		WebElement checkSeleniumIde = driver.findElement(By.cssSelector("input[value = 'Selenium IDE']"));
 		checkSeleniumIde.click();
-
 		if (checkSeleniumIde.isSelected() ==true){
 			System.out.println("Selenium Ide checkbox is selected");
 		}else{
 			System.out.println("Something gone wrong");
 		}
-
-
-
-
+		
+		System.out.println("All 4 challengs completed!!");
 		driver.close();
 	}
 
